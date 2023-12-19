@@ -1,15 +1,26 @@
-// import React, { useState, useEffect } from "react";
-import NavBar from "./components/Navbar/Navbar.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Error from "./pages/error";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import About from "./pages/About";
 import "./app.scss";
-// import datas from "./assets/data.json"
+import Details from "./pages/Details";
 
 function App() {
-
   return (
-    <div>
-      <NavBar />
-      
-    </div>
+    <BrowserRouter>
+      <div className="contain">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/detail/:id" element={<Details />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </div>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

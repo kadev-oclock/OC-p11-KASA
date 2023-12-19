@@ -1,0 +1,60 @@
+@import 'src/variable';
+
+
+.carrousel {
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
+
+  &__content {
+    display: flex;
+    width: 1240px;
+    height: 415px;
+  }
+
+}
+
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  inset: 0px;
+  align-items: center;
+  padding: 1.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  &__next img {
+    width: 2rem;
+    height: 4rem;
+  }
+  &__prev img {
+    width: 2rem;
+    height: 4rem;
+  }
+  &__next img:hover {
+    filter: invert(70%) sepia(0%) saturate(4%) hue-rotate(171deg) brightness(100%) contrast(82%);
+  }
+  &__prev img:hover {
+    filter: invert(70%) sepia(0%) saturate(4%) hue-rotate(171deg) brightness(100%) contrast(82%);
+  }
+}
+
+
+
+.slide {
+  width: 100%;
+  height: auto;
+  display: none;
+  transition: opacity 0.5s;
+  object-fit: cover;
+  /* ajoute une transition douce pour les changements d'opacité */
+}
+
+.active {
+  display: block;
+  /* affiche l'élément actif */
+  opacity: 1;
+  /* change l'opacité de l'élément actif */
+}

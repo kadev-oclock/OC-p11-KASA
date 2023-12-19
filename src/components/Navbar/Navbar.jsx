@@ -1,13 +1,24 @@
 import React from "react";
 import "./Navbar.scss";
 
+import logo from '/src/assets/img/logo.svg'; 
+import { Link } from "react-router-dom";
+// import "variable.scss";
+
 function Navbar() {
   return (
-    <div>
-      <nav className="logo">
-        <h1>coucou</h1>
+    <header className="header">
+      <Link className="logo" to="/">
+        {" "}
+        <img className="logo__size" src={logo} alt="logo" />
+      </Link>
+      <nav className="nav">
+        <Link className="nav__item active" to="/">
+          Acceuil
+        </Link>
+        <Link to="/about">A Propos</Link>
       </nav>
-    </div>
+    </header>
   );
 }
 
