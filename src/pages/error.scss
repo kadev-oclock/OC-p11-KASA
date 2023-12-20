@@ -1,0 +1,28 @@
+@import 'src/variable';
+
+.error {
+  text-align: center;
+  margin-bottom: 350px;
+  margin-top: 150px;
+  
+
+  &__name {
+    font-size: 12rem;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom:100px ;
+  }
+
+  &__intro {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 100px;
+  }
+  &__link {
+    color: $primary-color;
+    font-size: 1.5rem;
+    text-decoration: underline;
+  }
+
+}
