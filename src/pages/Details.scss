@@ -1,5 +1,27 @@
 @import 'src/variable';
 
 .infoDetail__title {
-    color:$primary-color ;
+  color: $primary-color;
+}
+
+.infoDetail__txt{
+  font-size: 1.1rem;
+  margin: 30px 0 30px 0;
+}
+
+.badge {
+  font-weight: 500;
+  display: flex;
+
+  &__info {
+   margin-right: 10px;
+   background-color: $primary-color;
+   font-size: 0.8rem;
+   padding: 8px;
+   width: 115px;
+   height: 25px;
+   border-radius: 8px;
+   text-align: center;
+   color: $white;
+  }
 }

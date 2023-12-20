@@ -36,7 +36,13 @@ function Details() {
       <div className="infoDetail">
         <div className="infoDetail__title">
           <h1>{Appart.title}</h1>
-          <h2>{Appart.location}</h2>
+          <h2 className="infoDetail__txt">{Appart.location}</h2>
+          <div className="badge">
+            {Appart.tags.map((tag) => 
+            <p key= "index" className={`badge__info`}> { tag } </p>
+             )}
+           
+          </div>
         </div>
       </div>
     </div>
