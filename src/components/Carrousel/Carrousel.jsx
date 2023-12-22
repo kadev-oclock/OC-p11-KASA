@@ -29,6 +29,8 @@ function Carrousel({ sliders }) {
         />
         ))} 
       </div>
+      
+      {sliders.length>1 && <>
       <div className="arrow">
         <div onClick={prevSlide} className="arrow__prev">
           <img src={arrowLeft} alt="Left Arrow" />
@@ -37,6 +39,10 @@ function Carrousel({ sliders }) {
           <img src={arrowRight} alt="Right Arrow" />
         </div>
       </div>
+      <div>
+        {currentIndex+1}/{sliders.length}
+      </div>
+      </>}
     </div>
  
     </>

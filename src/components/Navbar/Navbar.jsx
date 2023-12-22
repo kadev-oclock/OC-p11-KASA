@@ -14,7 +14,7 @@ function Navbar() {
       </Link>
       <nav className="nav">
         <Link className="nav__item active" to="/">
-          Acceuil
+        Accueil
         </Link>
         <Link to="/about">A Propos</Link>
       </nav>

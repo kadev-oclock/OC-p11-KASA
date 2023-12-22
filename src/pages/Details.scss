@@ -1,27 +1,73 @@
 @import 'src/variable';
 
-.infoDetail__title {
-  color: $primary-color;
+.infoDetail {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    color: $primary-color;
+  }
+
+  &__txt {
+    font-size: 1.1rem;
+    margin: 10px 0 30px 0;
+    font-weight: 500;
+  }
+
+  &__house {
+    font-weight: 500;
+  }
+
+  &__picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+  &__contain {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: -20px;
+  }
+  &__host {
+    display: flex;
+    align-items: center;
+  }
+  &__hostname {
+    padding: 10px;
+    color: $primary-color;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  &__star {
+    margin-top: 20px;
+  }
+
 }
 
-.infoDetail__txt{
-  font-size: 1.1rem;
-  margin: 30px 0 30px 0;
-}
+
 
 .badge {
   font-weight: 500;
   display: flex;
 
   &__info {
-   margin-right: 10px;
-   background-color: $primary-color;
-   font-size: 0.8rem;
-   padding: 8px;
-   width: 115px;
-   height: 25px;
-   border-radius: 8px;
-   text-align: center;
-   color: $white;
+    margin-right: 10px;
+    background-color: $primary-color;
+    font-size: 0.8rem;
+    padding: 6px 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: $white;
   }
+}
+
+.dropdown__contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 3rem;
+  margin-top: .875rem;
 }
