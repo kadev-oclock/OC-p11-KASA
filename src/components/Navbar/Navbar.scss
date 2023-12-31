@@ -9,17 +9,17 @@
   margin-bottom: 2.7rem;
   max-width: 1240px;
 
-  @media (max-width: 768px) {
-    width: 70%;
-    margin: auto;
-    margin-top: 50px;
+  @media (width <=810px) {
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
 
   }
 
   @media screen and (width <=375px) {
-    width: 52%;
+
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
 
   }
 }
@@ -27,6 +27,13 @@
 .nav {
   gap: 3.25rem;
   display: flex;
+
+  @media screen and (width <=375px) {
+    width: 360px;
+    align-items: baseline;
+    gap: 0.3rem;
+  }
+
 }
 
 .nav a {
@@ -34,6 +41,13 @@
   font-size: 1.5em;
   color: $primary-color;
   font-family: 'Montserrat', sans-serif;
+
+  @media screen and (width <=375px) {
+
+    margin: 0 0.4rem 0 0.4rem;
+
+
+  }
 
   &.active {
     text-decoration: underline;
@@ -44,6 +58,21 @@
   }
 }
 
+.logo {
+  @media screen and (width <=375px) {
+
+    padding: 10px;
+
+
+  }
+}
+
 .logo__size {
   width: 80%;
+
+  @media screen and (width <=375px) {
+
+    width: 70%;
+
+  }
 }

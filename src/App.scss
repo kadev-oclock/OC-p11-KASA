@@ -11,10 +11,7 @@ html {
 }
 
 body {
-  // margin: auto;
-  // display: table;
-  // width: 100vw;
-  // max-width: 95%;
+  margin: 0;
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -42,7 +39,9 @@ a {
   text-decoration: none;
   color: $black;
 }
-
+img {
+  width: 100%;
+}
 li {
   list-style-type: none;
 }
@@ -53,15 +52,15 @@ li {
   margin-bottom: 20px;
 }
 
-.home {
-  background-color: $light-grey;
-  border-radius: 25px;
-  padding: 50px;
-  margin-bottom: 50px;
+// .home {
+//   background-color: $light-grey;
+//   border-radius: 25px;
+//   padding: 50px;
+//   margin-bottom: 50px;
 
-  &__contain {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5.22%;
-  }
-}
+//   &__contain {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 5.22%;
+//   }
+// }

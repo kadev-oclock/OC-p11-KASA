@@ -8,9 +8,14 @@
   position: relative;
   border-radius: 10px;
   animation: fadeInUp .6s ease-in-out;
-  @media screen and (width <=  375px) {
+  @media screen and (width <=  768px) {
     width: 100%;
   }
+  @media screen and (width <= 378px) {
+    width: 335px;
+    height:255px ;
+  }
+
 
   &__img {
     border-radius: inherit;

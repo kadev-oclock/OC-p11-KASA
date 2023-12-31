@@ -39,7 +39,7 @@ function Carrousel({ sliders }) {
           <img src={arrowRight} alt="Right Arrow" />
         </div>
       </div>
-      <div>
+      <div className="arrow__count">
         {currentIndex+1}/{sliders.length}
       </div>
       </>}

@@ -78,6 +78,7 @@ function Details() {
           <div className="infoDetail__star">
             {star.map((num) => (
               <img
+                className="star"
                 key={num}
                 src={Appart.rating >= num ? redstar : greystar}
                 alt="star"

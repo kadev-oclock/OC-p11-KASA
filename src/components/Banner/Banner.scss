@@ -10,13 +10,17 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  @media  (max-width: 768px){
-    width:70% ;
-    margin: auto;
+
+  @media (width <=768px) {
+    width: 89%;
     margin-bottom: 50px;
+    margin: 25px;
   }
-  @media screen and (width <=  375px) {
-    width: 52%;
+
+  @media screen and (width <=376px) {
+    width: 335px;
+    height: 111px;
+    margin: 20px;
   }
 
   &__kasa {
@@ -41,5 +45,15 @@
     padding: 0;
     position: absolute;
     text-align: center;
+
+    @media (width <=810px) {
+      font-size: 2rem;
+    }
+    @media screen and (width <=376px) {
+    font-size: 1.5rem;
+    text-align: inherit;
+    padding: 10px;
+    }
+    
   }
 }
